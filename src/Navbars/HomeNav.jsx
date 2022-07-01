@@ -26,15 +26,15 @@ function HomeNav() {
                 {/* links */}
         </div>
             <div className=''>
-                <ul className={(open ? 'opacity-96' : 'opacity-0') + ' bg-[#f7f7f7] h-[800px] w-full text-center absolute transition-all duration-500 py-48'}>
+                <ul className={(open ? 'opacity-96' : 'opacity-0') + ' bg-[#f7f7f7] w-full h-auto  absolute transition-all duration-500 pt-5'}>
                 <Link to='/'>
-                    <li className="text-[16px] font-[400] p-6 text-xl">Home</li>
+                    <li className="text-[16px] font-[400] p-3">Home</li>
                 </Link>
                 <Link to='/about-us'>
-                    <li className="text-[16px] font-[400] p-6 text-xl">About Us</li>
+                    <li className="text-[16px] font-[400] p-3">About Us</li>
                 </Link>
                 <Link to='/contact-us'>
-                    <li className="text-[16px] font-[400] p-6 text-xl">Contact Us</li>
+                    <li className="text-[16px] font-[400] p-3">Contact Us</li>
                 </Link>
                 </ul>
             </div>
