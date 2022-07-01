@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.about{
+    box-shadow: 10px 10px 0px 0px #000000;
+
+}
+.header{
+    text-stroke:1px solid;
+    -webkit-text-stroke: 1px black;
+    
+    color:white;
+}
