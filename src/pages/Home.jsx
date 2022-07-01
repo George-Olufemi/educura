@@ -1,7 +1,9 @@
 import React from "react";
 import Show from "../components/Show";
+import Show2 from "../components/Show2";
 import HomeNav from "../Navbars/HomeNav";
 import laptop from './assets/Parent Dashboard 1.png'
+import laptop2 from './assets/Parent Dashboard 1 (1).png';
 
 function Home() {
   return(
@@ -18,12 +20,31 @@ function Home() {
                     </div>
                 </div>
                 {/* laptop image div */}
-                <div className="relative -top-[60px]">
+                <div className="relative -top-[30px]">
                     <img src={laptop} alt="" />
                 </div>
-                <Show />
-                {/* lg screen */}
+                <Show 
+                    className="block sm:hidden"
+                />
             </div>
+                {/* lg screen */}
+            <div className="md:flex-col lg:flex">
+            {/* 1 */}
+                <div className="w-[840px] h-[401px] bg-[#2B5EC0] mt-20 hidden md:block">
+                    <h1 className="text-white font-bold text-[70px] font-[Open Sans] pt-[92px] ml-[70px]">Welcome to eDucura</h1>
+                    <h2 className='text-white text-[20px] ml-[70px] font-[Open Sans]'>The place for every school and every Parent</h2>
+                    <div className="pt-[52px] ml-[70px]">
+                            <button className='w-[105px] h-[42px] bg-white font-[Open Sans] text-[16px] text-[#2B5EC0] capitalize'>get started</button>
+                        </div>
+                </div>
+                {/* 2 */}
+                <div className="absolute right-0 hidden md:block pt-4">
+                    <img src={laptop2} alt="Laptop" />
+                </div>
+            </div>
+                <Show2 
+                    className="hidden md:block"
+                />
         </div>
     </React.Fragment>
   );
