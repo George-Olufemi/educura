@@ -42,7 +42,7 @@ function Home() {
               The place for every school and every Parent
             </h2>
             <div className="pt-[52px] ml-[70px]">
-              <button className="w-[105px] h-[42px] bg-white font-[Open Sans] text-[16px] text-[#2B5EC0] capitalize">
+              <button className="w-[105px] h-[42px] bg-white font-[Open Sans] text-[16px] text-[#2B5EC0] capitalize hover:scale-105 transition-all duration-300">
                 get started
               </button>
             </div>

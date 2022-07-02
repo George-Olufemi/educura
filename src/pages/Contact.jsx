@@ -5,6 +5,8 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
+import smcontactext from "./assets/CONTACT Us.png";
+import lgcontactext from "./assets/CONTACT Us (1).png"; 
 
 import "../Assets/Contact.css";
 
@@ -13,11 +15,14 @@ function Contact() {
     <React.Fragment>
       <div className="bg-white h-screen">
         <HomeNav />
-        <span class="contactbig  md:text-7xl sm:text-5xl font-hairline sm:row-start-1 sm:row-end-2 ml-2">
-          CONTACT US
-        </span>
+        <div className="pt-6 flex md:hidden">
+          <img src={smcontactext} alt="" />
+        </div>
+        <div className="pt-6 hidden md:block">
+          <img src={lgcontactext} alt="" />
+        </div>
         <br />
-        <div class=" bg-white sm:grid sm:grid-cols-1 p-8 m-4 md:max-w-full md:mx-auto sm:max-w-sm sm:mx-auto md:grid md:grid-cols-2  md:grid-rows-1 md:justify-items-end md:gap-x-4 ">
+        <div class=" bg-white sm:grid sm:grid-cols-1 px-8 m-4 md:max-w-full md:mx-auto sm:max-w-sm sm:mx-auto md:grid md:grid-cols-2  md:grid-rows-1 md:justify-items-end md:gap-x-4 ">
           {/* ------------CONTACT FORM SECTION-------------- */}
           <div class="md:col-start-2 md:col-end-3 bg-white sm:grid sm:grid-cols-1   mt-0 m-4 md:max-w-4/5 md:mx-auto sm:max-w-sm sm:mx-auto ">
             <span className="text-[18px] font-[600]  text-xl font-sans text-[#2B5EC0]">
@@ -27,11 +32,7 @@ function Contact() {
               Reach out to us on our form and we will get back to you shortly.
             </p>
 
-            <form
-              class="mt-4 mb-4 md:flex md:flex-wrap md:justify-between sm:flex sm:flex-wrap sm:justify-between "
-              action="/"
-              method="post"
-            >
+            <form class="mt-4 mb-4 md:flex md:flex-wrap md:justify-between sm:flex sm:flex-wrap sm:justify-between">
               <div class="flex flex-col mb-3 md:w-full sm:w-full">
                 <input
                   type="text"
@@ -45,7 +46,7 @@ function Contact() {
                   type="email"
                   id="email"
                   class="border border-gray-900 py-2 px-3 text-grey-darkest md:mr-2 sm:mr-1"
-                  placeholder="email"
+                  placeholder="*email"
                   required
                 />
               </div>
@@ -70,7 +71,7 @@ function Contact() {
               >
                 Send Message
               </button>
-              <h6>*These fields are required</h6>
+              <h6 className='text-sm'>*These fields are required</h6>
             </form>
           </div>
 
