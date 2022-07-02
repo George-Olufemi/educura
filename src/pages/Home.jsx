@@ -2,11 +2,11 @@ import React from "react";
 import HomeNav from "../Navbars/HomeNav";
 
 function Home() {
-  return(
+  return (
     <React.Fragment>
-        <div className="bg-white h-screen">
-            <HomeNav />
-        </div>
+      <div className="bg-white h-screen">
+        <HomeNav />
+      </div>
     </React.Fragment>
   );
 }
