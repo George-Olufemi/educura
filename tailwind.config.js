@@ -4,7 +4,7 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
 
-  // ADDED CUSTOM IEWPORT FOR SMALL DEVICES
+  // ADDED CUSTOM VIEWPORT FOR SMALL DEVICES
   theme: {
     maxWidth: {
       '4/5': '80%'
